@@ -14,8 +14,6 @@ let y = undefined;
 
 canvas.addEventListener("mousedown", () => {
     isPress = true
-    x = e.offsetX;
-    y = e.offsetY;
 })
 canvas.addEventListener("mouseup", () => {
     isPress = false
@@ -37,7 +35,7 @@ canvas.addEventListener("mousemove", function(e) {
 
 function drawCircle(x, y) {
     ctx.beginPath();
-    ctx.arc(x, y, size, 0, Math.PI * 2);
+    ctx.arc(x, y, size, 0, Math.PI * 3);
     ctx.fillStyle = color;
     ctx.fill();
 }
